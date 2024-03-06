@@ -7,6 +7,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 
 export default function SearchBox() {
 	const searchParams = useSearchParams();
+	const router = useRouter();
 	const searchTerm = searchParams.get('searchTerm');
 	const [term, setTerm] = useState(searchTerm || '');
 	const handleSubmit = (e) => {
