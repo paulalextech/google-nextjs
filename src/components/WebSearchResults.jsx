@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-no-undef */
 import Link from 'next/link';
-import React from 'react';
 import Parser from 'html-react-parser';
 import PaginationButtons from './PaginationButtons';
 

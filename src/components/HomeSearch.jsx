@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { BsFillMicFill } from 'react-icons/bs';
 import { useRouter } from 'next/navigation';
-import { data } from 'autoprefixer';
 
 export default function HomeSearch() {
 	const [input, setInput] = useState('');
@@ -25,7 +24,6 @@ export default function HomeSearch() {
 		router.push(`/search/web?searchTerm=${response}`);
 		setRandomSearchLoading(false);
 	};
-
 	return (
 		<>
 			<form
@@ -42,7 +40,6 @@ export default function HomeSearch() {
 				/>
 				<BsFillMicFill className="text-lg" />
 			</form>
-
 			<div className="flex flex-col space-y-2 sm:space-y-0 justify-center sm:flex-row mt-8 sm:space-x-4">
 				<button
 					className="bg-[#f8f9fa] rounded-md text-sm

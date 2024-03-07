@@ -27,8 +27,5 @@ export default async function ImageSearchPage({ searchParams }) {
 		);
 	}
 
-	return (
-		// eslint-disable-next-line react/jsx-key
-		<div>{results && <ImageSearchResults results={data} />}</div>
-	);
+	return <div>{results && <ImageSearchResults results={data} />}</div>;
 }

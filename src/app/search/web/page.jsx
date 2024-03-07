@@ -1,7 +1,5 @@
-// import WebSearchResults from '@/components/WebSearchResults';
 import WebSearchResults from '@/components/WebSearchResults';
 import Link from 'next/link';
-import { resolve } from 'styled-jsx/css';
 
 export default async function WebSearchPage({ searchParams }) {
 	const startIndex = searchParams.start || '1';
@@ -29,8 +27,5 @@ export default async function WebSearchPage({ searchParams }) {
 		);
 	}
 
-	return (
-		// eslint-disable-next-line react/jsx-key
-		<div>{results && <WebSearchResults results={data} />}</div>
-	);
+	return <div>{results && <WebSearchResults results={data} />}</div>;
 }

@@ -1,7 +1,6 @@
 import HomeHeader from '@/components/HomeHeader';
-import React from 'react';
-import Image from 'next/image';
 import HomeSearch from '@/components/HomeSearch';
+import Image from 'next/image';
 
 export default function Home() {
 	return (
