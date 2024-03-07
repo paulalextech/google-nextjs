@@ -2,17 +2,13 @@
 
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
-import {
-	BsChevronBarLeft,
-	BsChevronBarRight,
-	BsChevronRight,
-} from 'react-icons/bs';
+import { BsChevronBarLeft, BsChevronBarRight } from 'react-icons/bs';
 
 export default function PaginationButtons() {
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
 	const searchTerm = searchParams.get('searchTerm');
-	const searchIndex = +searchParams.get('start') || 1;
+	const startIndex = +searchParams.get('start') || 1;
 
 	return (
 		<div className="text-blue-700 flex px-10 pb-4 justify-between sm:justify-start sm:space-x-44 sm:px-0">
