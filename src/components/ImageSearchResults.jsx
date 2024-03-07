@@ -11,9 +11,10 @@ export default function ImageSearchResults({ results }) {
 						<div className="group">
 							<Link href={result.image.contextLink}>
 								<Image
+									// loader={myLoader}
 									src={result.link}
-									width={500}
-									height={500}
+									width={50}
+									height={50}
 									alt={result.title}
 									className="h-60 group:hover:shadow-xl w-full object-contain
                                     transition-shadow duration-300"

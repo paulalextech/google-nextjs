@@ -5,11 +5,11 @@ const nextConfig = {
 			{
 				protocol: 'https',
 				hostname: 'blog.hubspot.com',
+				port: '',
 				pathname: '**',
 			},
 		],
 	},
 };
 
-export default nextConfig;
-// module.exports = nextConfig;
+module.exports = nextConfig;
