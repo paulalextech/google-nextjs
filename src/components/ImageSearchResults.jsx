@@ -13,8 +13,8 @@ export default function ImageSearchResults({ results }) {
 								<Image
 									// loader={myLoader}
 									src={result.link}
-									width={50}
-									height={50}
+									width={250}
+									height={250}
 									alt={result.title}
 									className="h-60 group:hover:shadow-xl w-full object-contain
                                     transition-shadow duration-300"
